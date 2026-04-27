@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: parkering-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx playwright install chromium --with-deps
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health
