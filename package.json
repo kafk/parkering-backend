@@ -1,0 +1,20 @@
+{
+  "name": "parkering-backend",
+  "version": "1.0.0",
+  "description": "Playwright + Claude Vision backend for Parkering Goteborg polygon extraction",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "playwright": "^1.44.0"
+  }
+}
